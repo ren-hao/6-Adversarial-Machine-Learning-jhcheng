@@ -25,3 +25,12 @@ Interestingly, the *adversarial_example.png* is miss-classified as a cat!
 For the mini-project, you are given three images (cat1.png, cat2.png, dog1.png). Please create their adversarial versions, which will be misclassified by the classifier.
 
 Hint: https://www.tensorflow.org/tutorials/generative/adversarial_fgsm  
+
+# Result
+![image](result.png)
+This is my result. Every image will be misclassified by classifier.
+
+Use FGSM（Fast Gradient Sign Method) algorithm to generate image. Get first layer and last layer of model as input and output respectively. Use that algorithm to attack, update gradient each time then set threshold is 0.6. we can get interference to enable misclassfied by classifier, combine original image with interference to get adversarial image.
+
+# Usage
+Put generate_adversarial.ipynb to Google Driver. Open this file with "Google Colaboratory", you can get output of my code or run this code again.
